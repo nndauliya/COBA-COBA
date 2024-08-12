@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Website Pendidikan</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__header">
+            <a href="index.html" class="nav__logo">
+                
+            <img src="img/logo.jpeg" class="nav__logoo" alt="" />
+
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+            </div>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+            <li><a href="index.html" class="nav__link active-link">Home</a></li>
+            <li><a href="contact.html" class="nav__link">Services</a></li>
+          
+            </ul>
+
+            <!-- Search -->
+            <form action="" class="nav__search-form">
+              
+                <input type="text" placeholder="Search" class="nav__input" />
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+               
+            </form>
+        </div>
+    </nav>
+    <main>
+        <section class="status-form">
+            <h2>Masukkan data diri anda.</h2>
+            <form name="fromku" onsubmit="return validasi()">
+                <div class="user-details">
+                    <div class="input-inbox">
+                        <span class="details">Nama Lengkap :</span>  
+                        <input type="text" name="nama" id="teks" placeholder="Masukkan nama lengkap" required />
+                      </div>
+
+                      <div class="input-inbox">
+                        <span class="details">Email :</span> 
+                        <input type="email" name="email" id="email" placeholder="Masukkan alamat email" required />
+                      </div>
+
+                      <div class="input-inbox">
+                        <span class="details">Nomor Telepon :</span>
+                        <input type="tel" name="telepon" id="number" placeholder="Masukkan nomor telepon anda" required />
+                      </div>
+
+                      <div class="input-inbox">
+                        <span class="details">Alamat :</span> 
+                        <input type="text" name="alamat" id="teks" placeholder="Masukkan alamat anda" required />
+                      </div>
+
+                      <div class="input-inbox">
+                        <span class="details">Asal Sekolah :</span> 
+                        <input type="text" name="sekolah" id="teks" placeholder="Asal sekolah" required />
+                      </div>
+
+                      <div class="input-inbox">
+                        <span class="details">Alasan :</span> 
+                        <input type="text" name="alasan" id="teks" placeholder="Alasan anda ingin Bergabung" required />
+                      </div>
+                  <div>
+                    <input type="submit" name="button" value="Submit" onclick="validasi()"/>
+                  </div>
+                  <div>
+                    <input type="reset" name="reset" value="Reset"/>
+                  </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Pendidikan. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
